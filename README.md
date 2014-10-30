@@ -22,7 +22,7 @@ That is pretty simple.
 ### Connecting
 
 #### Apache
-The Apache server is available at <http://lamp-vagrant.dev> or <http://lamp-vagrant.lc>
+The Apache server is available at <http://vagrant-lamp.dev> or <http://vagrant-lamp.lc>
 
 #### MySQL
 Externally the MySQL server is available at port 8889, and when running on the VM it is available as a socket or at port 3306 as usual.
@@ -30,9 +30,9 @@ Username: root
 Password: root
 
 ### Run PHP test file
-Enter http://lamp-vagrant.dev/test.php or http://lamp-vagrant.lc/test.php in your browser to see PHP information.
+Enter http://vagrant-lamp.dev/test.php or http://vagrant-lamp.lc/test.php in your browser to see PHP information.
 
-### Access host machine
+### Access guest machine
 	$ vagrant ssh
 
 Technical Details
@@ -45,4 +45,4 @@ Technical Details
 I'm using the base Ubuntu 12.04 box from Vagrant. If you don't already have it downloaded
 the Vagrantfile has been configured to do it for you.
 
-The web root is located in the lamp-vagrant directory and you can install your files there
+The web root is located in the lamp-vagrant directory and you can install your files there.
