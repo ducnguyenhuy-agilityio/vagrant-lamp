@@ -45,5 +45,3 @@ try {
 };
 
 phpinfo(); ?>' | tee /vagrant/test.php
-
-# 192.168.33.10   lamp-vagrant.com
