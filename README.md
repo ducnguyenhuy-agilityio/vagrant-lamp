@@ -8,6 +8,7 @@ Requirements
 * VirtualBox <http://www.virtualbox.com>
 * Vagrant <http://www.vagrantup.com>
 * Git <http://git-scm.com/>
+* Vagrant HostsUpdater plugin <https://github.com/cogitatio/vagrant-hostsupdater>
 
 Usage
 -----
@@ -45,4 +46,4 @@ Technical Details
 I'm using the base Ubuntu 12.04 box from Vagrant. If you don't already have it downloaded
 the Vagrantfile has been configured to do it for you.
 
-The web root is located in the lamp-vagrant directory and you can install your files there.
+The web root is located in the vagrant-lamp directory and you can install your files there.
