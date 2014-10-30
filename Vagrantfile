@@ -23,7 +23,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-  # config.vm.network :private_network, ip: "192.168.33.10"
+  config.vm.network :private_network, ip: "192.168.33.10"
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
@@ -78,7 +78,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   puppet.manifest_file  = "site.pp"
   # end
 
-  # fix stdin error
+  # Duc Nguyen, 10/29/2014: fix stdin error
   config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
   # shell provisioner
@@ -121,4 +121,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # chef-validator, unless you changed the configuration.
   #
   #   chef.validation_client_name = "ORGNAME-validator"
+
+  # Duc Nguyen, 10/30/2014: adds an entry to your /etc/hosts file on the host system
+  if defined?(VagrantPlugins::HostsUpdater)
+    config.hostsupdater.aliases = ["lamp-vagrant.dev", "lamp-vagrant.lc"]
+  end
 end

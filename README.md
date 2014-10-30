@@ -1,4 +1,4 @@
-lamp-vagrant
+LAMP Vagrant
 ============
 
-Vagrant basic box with LAMP installed (Ubuntu, Apache, MySql and PHP)
+Vagrant basic box with LAMP (Linux, Apache, MySql and PHP) installed on Ubuntu 12.04 LTS
