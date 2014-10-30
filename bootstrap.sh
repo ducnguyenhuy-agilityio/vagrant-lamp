@@ -44,4 +44,4 @@ try {
     echo "Connection failed: " . $e->getMessage();
 };
 
-phpinfo(); ?>' | tee /vagrant/test.php
+phpinfo(); ?>' | tee /vagrant/phpinfo.php

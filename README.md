@@ -18,8 +18,6 @@ Usage
 	$ cd vagrant-lamp
 	$ vagrant up
 
-That is pretty simple.
-
 ### Connecting
 
 #### Apache
@@ -31,7 +29,7 @@ Username: root
 Password: root
 
 ### Run PHP test file
-Enter http://vagrant-lamp.dev/test.php or http://vagrant-lamp.lc/test.php in your browser to see PHP information.
+Enter http://vagrant-lamp.dev/phpinfo.php or http://vagrant-lamp.lc/phpinfo.php in your browser to see PHP information.
 
 ### Access guest machine
 	$ vagrant ssh
