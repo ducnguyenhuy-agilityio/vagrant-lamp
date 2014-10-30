@@ -29,7 +29,7 @@ sudo apt-get install -y mysql-server libapache2-mod-auth-mysql php5-mysql
 # Restart Apache
 sudo service apache2 restart
 
-# Create test.php file
+# Create PHP test file
 echo '
 <?php
 /* Connect to an ODBC database using driver invocation */

@@ -125,6 +125,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Duc Nguyen, 10/30/2014: adds an entry to your /etc/hosts file on the host system
   if defined?(VagrantPlugins::HostsUpdater)
-    config.hostsupdater.aliases = ["lamp-vagrant.dev", "lamp-vagrant.lc"]
+    config.hostsupdater.aliases = ["vagrant-lamp.dev", "vagrant-lamp.lc"]
   end
 end
